@@ -1,0 +1,343 @@
+/* FONTS */
+
+@font-face {
+font-family: 'Montserrat Bold';
+	src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+	url('../fonts/montserrat-bold.woff') format('woff'),
+	url('../fonts/montserrat-bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Montserrat Regular';
+	src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+	url('../fonts/montserrat-regular.woff') format('woff'),
+	url('../fonts/montserrat-regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PermanentMarker';
+	src: url('../fonts/permanentmarker.woff2') format('woff2'),
+	url('../fonts/permanentmarker.woff') format('woff'),
+	url('../fonts/permanentmarker.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+
+
+
+/* SETTINGS */
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+* + * {
+	margin-top: 1.5em;
+}
+
+body {
+	max-width: 84em;
+	padding: 2em 0;
+	margin: 0 auto;
+  	background-color: #fe4970;
+	color: #fff;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+.fonts-loaded body {
+	font-family: 'Montserrat Regular', sans-serif;
+}
+
+.sr-only {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+}
+
+
+
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+	padding: 8em 0 2em 0;
+}
+
+.article-header__headline {
+	color: #32026c;
+	font-size: calc(1em + 5vw);
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 48.000em) {
+	.article-header__headline {
+		font-size: calc(1em + 7vw);
+	}
+}
+
+
+
+
+
+
+/* ARTICLE FOOTER */
+
+.article-footer {
+	margin: -2rem 0 6em;
+}
+
+@media only screen and (min-width: 48.000em) {
+	.article-footer {
+		margin: -4rem 0 8em;
+	}
+}
+
+
+
+
+
+/* DIAP BLOCK */
+
+.diap-block {
+	width: 100%;
+	padding: 3em 1em 5em;
+	background-color: #32026c;
+}
+
+.diap-block__text {
+	max-width: 50rem;
+	margin: 0 auto 1em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.diap-block__link {
+	color: #fe4970;
+}
+
+.diap-block__link:hover,
+.diap-block__link:active,
+.diap-block__link:focus {
+	background-color: #fe4970;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+
+@media only screen and (min-width: 48.000em) {
+	.diap-block {
+		padding: 6em 2em;
+	}
+	.diap-block__text {
+		font-size: 1.5em;
+		line-height: 1.8em;
+	}
+}
+
+
+
+
+
+/* YOURS TRULY */
+
+.yours-truly {
+	display: block;
+	margin: 1em auto;
+	font-family: cursive;
+	font-size: 1.5em;
+	-webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+}
+
+.fonts-loaded .yours-truly {
+	font-family: 'PermanentMarker', cursive;
+}
+
+@media only screen and (min-width: 48.000em) {
+	.yours-truly {
+		font-size: 2em;
+	}
+}
+
+
+
+
+
+/* THE NOTES */
+
+.notes {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+	padding: 0;
+	margin: -7em 0 0 0;
+	list-style: none;
+	z-index: 1;
+}
+
+
+/* Notes item */
+
+.notes__item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1em;
+	margin-top: 0;
+}
+
+.no-flexbox .notes__item {
+	float: left;
+}
+
+@media only screen and (min-width: 40em) {
+	.notes__item {
+		width: 50%;
+	}
+	.no-flexbox .notes__item:nth-child(2n+1) {
+		clear: both;
+	}
+}
+
+@media only screen and (min-width: 70em) {
+	.notes__item {
+		width: 33.3333%;
+		padding: 2em;
+		-webkit-transform: rotate(-5deg);
+            	transform: rotate(-5deg);
+	}
+	.no-flexbox .notes__item:nth-child(3n+1) {
+		clear: both;
+	}
+}
+
+
+/* Note */
+
+.note {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	 -webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+			flex-direction: column;
+	background-color: #fff;
+	-webkit-box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
+       -moz-box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
+            box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
+}
+
+
+/* Note content */
+
+.note__content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+			-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	padding: 1.5em;
+	margin-top: 0;
+}
+
+
+/* Note heading */
+
+.note__heading {
+	color: #fe4970;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.fonts-loaded .note__heading {
+	font-family: 'Montserrat Bold', sans-serif;
+}
+
+
+/* Note text */
+
+.note__text {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+			flex: 1 0 auto;
+	color: #32026c;
+	font-family: cursive;
+}
+
+.fonts-loaded .note__text {
+	font-family: 'PermanentMarker', cursive;
+	letter-spacing: 0.04em;
+}
+
+
+/* Note links */
+
+.note__link {
+	color: #fe4970;
+}
+
+.note__link:hover,
+.note__link:active,
+.note__link:focus {
+	background-color: #32026c;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+
+.note__link--button {
+	display: inline-block;
+	padding: 1em 0;
+	background-color: #3E10CB;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.note__link--button:hover,
+.note__link--button:active,
+.note__link--button:focus {
+	background-color: #fe4970;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
