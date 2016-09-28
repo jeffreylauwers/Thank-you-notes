@@ -91,7 +91,7 @@ body {
 	text-transform: uppercase;
 }
 
-@media only screen and (min-width: 48.000em) {
+@media only screen and (min-width: 48rem) {
 	.article-header__headline {
 		font-size: calc(1em + 7vw);
 	}
@@ -108,7 +108,7 @@ body {
 	margin: -2rem 0 6em;
 }
 
-@media only screen and (min-width: 48.000em) {
+@media only screen and (min-width: 48rem) {
 	.article-footer {
 		margin: -4rem 0 8em;
 	}
@@ -146,7 +146,7 @@ body {
 	transition: 0.2s ease;
 }
 
-@media only screen and (min-width: 48.000em) {
+@media only screen and (min-width: 48rem) {
 	.diap-block {
 		padding: 6em 2em;
 	}
@@ -175,7 +175,7 @@ body {
 	font-family: 'PermanentMarker', cursive;
 }
 
-@media only screen and (min-width: 48.000em) {
+@media only screen and (min-width: 48rem) {
 	.yours-truly {
 		font-size: 2em;
 	}
@@ -195,9 +195,9 @@ body {
 	-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
+	list-style: none;
 	padding: 0;
 	margin: -7em 0 0 0;
-	list-style: none;
 	z-index: 1;
 }
 
@@ -209,7 +209,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 1em;
+	padding: 1rem;
 	margin-top: 0;
 }
 
@@ -217,7 +217,7 @@ body {
 	float: left;
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40rem) {
 	.notes__item {
 		width: 50%;
 	}
@@ -226,7 +226,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 70rem) {
 	.notes__item {
 		width: 33.3333%;
 		padding: 2em;
@@ -255,6 +255,7 @@ body {
 	-webkit-box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
        -moz-box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
             box-shadow: 1.5em 1.5em 4em 0 rgba(61,3,16,0.5);
+    overflow: hidden;
 }
 
 
@@ -266,9 +267,9 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-flex: 1;
-		-webkit-flex: 1 0 auto;
-			-ms-flex: 1 0 auto;
-				flex: 1 0 auto;
+		-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -296,9 +297,9 @@ body {
 
 .note__text {
 	-webkit-box-flex: 1;
-	-webkit-flex: 1 0 auto;
-		-ms-flex: 1 0 auto;
-			flex: 1 0 auto;
+	-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
 	color: #32026c;
 	font-family: cursive;
 }
